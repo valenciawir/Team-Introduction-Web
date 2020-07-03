@@ -1,0 +1,319 @@
+/* Gita--> Header CSS */
+@font-face {
+  font-family: Moderne Sans;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/moderne_sans.woff2);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  background-size: cover;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+div#fashion {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+header:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+h1 {
+  font-family: Moderne Sans, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  letter-spacing: .5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+}
+
+h2 {
+  font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
+  font-size: 8vmin;
+  text-align: center;
+  margin: 2rem 3rem 0;
+  mix-blend-mode: overlay;
+  font-weight: 100;
+  color: #000;
+}
+
+
+
+/* Tachya --> CSS Content (responsive column) */
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Tachya --> End of CSS Content (responsive column) */
+
+/* Ari Eriyanto - Part - Top Body */
+
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://www.melvinlau.com/wp-content/uploads/2019/10/annie-spratt-QckxruozjRg-unsplash-1024x683.jpg),linear-gradient(233deg, #3d9c31, #37bbde);
+  width:100%;
+  background-size:cover;
+  background-blend-mode: hard-light;
+  animation: hue-rotate 15s linear infinite;
+  color: white;
+  text-align: center; 
+}
+
+.top-wrapper h1 {
+  opacity: 0.8;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper h3 {
+  opacity: 0.8;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  margin-bottom: 10px;
+}
+
+.btn-wrapper {
+  padding: 30px;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.default {
+  background-color: #fff, 0.0;
+}
+
+.default2 {
+  background-color: #fff, 0.0;
+  margin-right: 10px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: 3px solid white;
+  background-color: white, 0.0;
+  color: white;
+  opacity: 0.8;
+  display: inline-block;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* Animasi */
+
+@keyframes hue-rotate {
+from {
+  -webkit-filter: hue-rotate(0);
+  -moz-filter: hue-rotate(0);
+  -ms-filter: hue-rotate(0);
+  filter: hue-rotate(0);
+}
+to {
+  -webkit-filter: hue-rotate(180deg);
+  -moz-filter: hue-rotate(180deg);
+  -ms-filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg);
+}
+}
+
+/* end of Animasi */
+
+/* end of Ari Eriyanto - Part */
+
+  /* Valen --> CSS Content (animated box) */
+
+  body {
+    margin: 0;
+    font-family: "Lucida Grande";
+  }
+  
+ 
+
+  .heading {
+      background-color: #f6fbff;
+      color: rgb(32, 37, 63);
+  }
+
+  .message-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+    background-color: #f6fbff;
+  }
+  
+  .message {
+     font-family: "roboto";
+     font-style: bold;
+     color: rgb(32, 37, 63);
+    padding: 15px 40px;
+    background-color: #9bb8ee;
+    cursor: pointer;
+    box-shadow: 0 7px #7291cc;
+  }
+
+  
+  .message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+
+
+
+  .contact-form {
+    padding-top: 100px;
+    background-color: #f6fbff;
+  }
+  
+
+  input, textarea {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding : 20px;
+    font-size: 18px;
+    
+    border: 1px solid #dee7ec;
+  }
+ 
+  .contact-submit {
+    background: #dee7ec;
+    color: rgb(32, 37, 63);
+    animation: kotak 2s ease;
+  }
+
+  @keyframes kotak {
+    from {
+        width: 50px;
+    }
+    to {
+        width: 400px;
+    }
+  }
+  
+  footer img {
+    width: 150px;
+  }
+  
+ 
+  footer {
+    padding-top: 50px;
+    background-color: #f6fbff;
+  }
+
+  
+.footer {
+  background-color: #FFF;
+  color: rgb(32, 37, 63);
+  height: 250px;
+  padding: 40px;
+}
+
+.footer-logo {
+  float: left;
+  font-size: 40px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 1170px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+  /* Valen --> End of CSS Content (Animated Box) */
