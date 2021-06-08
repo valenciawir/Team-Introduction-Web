@@ -1,2 +1,2 @@
-# front-end
-front end web development
+# Front-End Development
+Developing a web about team introduction
